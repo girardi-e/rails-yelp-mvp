@@ -17,7 +17,7 @@ class RestaurantsController < ApplicationController
     if @restaurant.save
       redirect_to @restaurant, notice: 'Restaurant was successfully created.'
     else
-      render :new
+      render 'new'
     end
   end
 
